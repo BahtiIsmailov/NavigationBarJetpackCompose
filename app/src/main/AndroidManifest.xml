@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.atom.navigation_bar"
+    android:sharedUserId="android.uid.system">
+
+    <application
+        android:supportsRtl="true"
+        tools:targetApi="31">
+
+        <service
+            android:name=".AtomNavBarService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="app.atom.navbar.intent" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
