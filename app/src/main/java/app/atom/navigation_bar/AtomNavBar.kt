@@ -35,6 +35,7 @@ fun AtomNavbar() {
     ) {
         Text("")
         TextButton(
+
             onClick = {
                 val startMain = Intent(Intent.ACTION_MAIN)
                 startMain.addCategory(Intent.CATEGORY_HOME)
